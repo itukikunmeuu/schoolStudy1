@@ -1,0 +1,10 @@
+﻿  sample.c
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample15\sample.c(7,9): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 1 は型 'size_t' です
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample15\sample.c(7,9): message : 書式文字列に '%zd' を使用することをお勧めします
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample15\sample.c(8,9): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 1 は型 'size_t' です
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample15\sample.c(8,9): message : 書式文字列に '%zd' を使用することをお勧めします
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample15\sample.c(9,9): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 1 は型 'size_t' です
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample15\sample.c(9,9): message : 書式文字列に '%zd' を使用することをお勧めします
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample15\sample.c(22,44): warning C4013: 関数 'srtlen' は定義されていません。int 型の値を返す外部関数と見なします。
+sample.obj : error LNK2019: 未解決の外部シンボル srtlen が関数 main で参照されました
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample15\x64\Debug\sample15.exe : fatal error LNK1120: 1 件の未解決の外部参照

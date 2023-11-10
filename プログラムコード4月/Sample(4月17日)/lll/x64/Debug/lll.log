@@ -1,0 +1,9 @@
+﻿  ソース.cpp
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\lll\ソース.cpp(92,10): warning C4553: '==': 式の結果が使用されていません。'=' を意図していますか?
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\lll\ソース.cpp(105,11): warning C4553: '==': 式の結果が使用されていません。'=' を意図していますか?
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\lll\ソース.cpp(113,11): warning C4553: '==': 式の結果が使用されていません。'=' を意図していますか?
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\lll\ソース.cpp(186,44): error C2065: 'enemyHand': 定義されていない識別子です。
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\lll\ソース.cpp(195,4): error C3861: 'dispWin': 識別子が見つかりませんでした
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\lll\ソース.cpp(197,3): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\lll\ソース.cpp(200,4): error C3861: 'dispLose': 識別子が見つかりませんでした
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\lll\ソース.cpp(202,3): error C2143: 構文エラー: ';' が '}' の前にありません。

@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\fko2347002\source\repos\Programing_KawanoTeacter\Program\main.cpp(21,15): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const wchar_t *' から 'const TCHAR *' へ変換できません。
+C:\Users\fko2347002\source\repos\Programing_KawanoTeacter\Program\main.cpp(21,25): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたはかっこで囲まれた関数スタイル キャストが必要です。
+C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2671,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+C:\Users\fko2347002\source\repos\Programing_KawanoTeacter\Program\main.cpp(21,15): message : 引数リスト '(const wchar_t *)' を一致させようとしているとき
+  main_1.cpp
+  コードを生成中...

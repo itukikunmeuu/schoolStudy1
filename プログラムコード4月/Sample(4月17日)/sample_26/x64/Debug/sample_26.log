@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+main.obj : error LNK2019: 未解決の外部シンボル "public: __cdecl Player::Player(void)" (??0Player@@QEAA@XZ) が関数 "void __cdecl __builtin_array_init_helper<class Player>(class Player *,unsigned __int64)" (??$__builtin_array_init_helper@VPlayer@@@@YAXPEAVPlayer@@_K@Z) で参照されました
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample_26\x64\Debug\sample_26.exe : fatal error LNK1120: 1 件の未解決の外部参照

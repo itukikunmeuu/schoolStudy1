@@ -1,0 +1,4 @@
+﻿  sample8.cpp
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample8\sample8.cpp(13,7): warning C4244: '+=': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample8\sample8.cpp(23,4): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  sample8.vcxproj -> C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample8\x64\Debug\sample8.exe

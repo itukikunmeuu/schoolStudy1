@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\fko2347002\source\repos\MyPrograming\test_2\main.cpp(8,14): error C2039: 'cout': 'std' のメンバーではありません
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\stddef.h(23,15): message : 'std' の宣言を確認してください
+C:\Users\fko2347002\source\repos\MyPrograming\test_2\main.cpp(8,37): error C2039: 'endl': 'std' のメンバーではありません
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\stddef.h(23,15): message : 'std' の宣言を確認してください

@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\fko2347002\Desktop\吉山悠翔\SampleGame230831\a\repos\Programing_HurukawaTeacher\Sample20231106\main.cpp(95,13): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\fko2347002\Desktop\吉山悠翔\SampleGame230831\a\repos\Programing_HurukawaTeacher\Sample20231106\main.cpp(96,13): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\fko2347002\Desktop\吉山悠翔\SampleGame230831\a\repos\Programing_HurukawaTeacher\Sample20231106\main.cpp(123,12): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\fko2347002\Desktop\吉山悠翔\SampleGame230831\a\repos\Programing_HurukawaTeacher\Sample20231106\main.cpp(124,12): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+  Sample20231106.vcxproj -> C:\Users\fko2347002\Desktop\吉山悠翔\SampleGame230831\a\repos\Programing_HurukawaTeacher\Sample20231106\x64\Debug\Sample20231106.exe

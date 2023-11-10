@@ -1,0 +1,5 @@
+﻿  sample.c
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample11\sample.c(13,2): warning C4013: 関数 'srand' は定義されていません。int 型の値を返す外部関数と見なします。
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample11\sample.c(13,22): warning C4013: 関数 'time' は定義されていません。int 型の値を返す外部関数と見なします。
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample11\sample.c(22,16): warning C4013: 関数 'rand' は定義されていません。int 型の値を返す外部関数と見なします。
+  sample11.vcxproj -> C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample11\x64\Debug\sample11.exe

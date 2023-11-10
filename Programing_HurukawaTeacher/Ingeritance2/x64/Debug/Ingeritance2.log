@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\fko2347002\source\repos\Programing_HurukawaTeacher\Ingeritance2\Class.h(9,25): error C2065: 'cout': 定義されていない識別子です。
+C:\Users\fko2347002\source\repos\Programing_HurukawaTeacher\Ingeritance2\Class.h(9,43): error C2065: 'endl': 定義されていない識別子です。
+C:\Users\fko2347002\source\repos\Programing_HurukawaTeacher\Ingeritance2\Class.h(29,26): error C2065: 'cout': 定義されていない識別子です。
+C:\Users\fko2347002\source\repos\Programing_HurukawaTeacher\Ingeritance2\Class.h(29,45): error C2065: 'endl': 定義されていない識別子です。

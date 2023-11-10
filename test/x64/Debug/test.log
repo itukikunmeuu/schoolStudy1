@@ -1,0 +1,2 @@
+﻿LIBCMTD.lib(exe_main.obj) : error LNK2019: 未解決の外部シンボル main が関数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) で参照されました
+C:\Users\fko2347002\source\repos\test\x64\Debug\test.exe : fatal error LNK1120: 1 件の未解決の外部参照

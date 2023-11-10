@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  player.cpp
+C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  文章.cpp
+  コードを生成中...
+  sample_26_gamesa-cle.vcxproj -> C:\Users\fko2347002\Desktop\吉山悠翔\repos\プログラムコード4月\Sample(4月17日)\sample_26_gamesa-cle\x64\Debug\sample_26_gamesa-cle.exe

@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\DxLib_VC3_24b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\DxLibBase3\main.cpp(82,31): error C2109: 配列または、ポインターでない変数に添字が使われました。
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\DxLibBase3\main.cpp(176,17): error C2065: 'enemyHandle': 定義されていない識別子です。
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\DxLibBase3\main.cpp(177,59): error C2065: 'enemyHandle': 定義されていない識別子です。
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\DxLibBase3\main.cpp(177,17): error C2660: 'DxLib::DrawGraph': 関数に 3 個の引数を指定できません。
+C:\DxLib_VC3_24b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2907,14): message : 'DxLib::DrawGraph' の宣言を確認してください
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\DxLibBase3\main.cpp(177,17): message : 引数リスト '(int, int, int)' を一致させようとしているとき

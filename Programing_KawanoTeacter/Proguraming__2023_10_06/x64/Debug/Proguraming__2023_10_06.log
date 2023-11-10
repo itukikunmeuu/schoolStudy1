@@ -1,0 +1,2 @@
+﻿main.obj : error LNK2005: WinMain は既に Application.obj で定義されています。
+C:\Users\fko2347002\source\repos\Programing_KawanoTeacter\Proguraming__2023_10_06\x64\Debug\Proguraming__2023_10_06.exe : fatal error LNK1169: 1 つ以上の複数回定義されているシンボルが見つかりました。

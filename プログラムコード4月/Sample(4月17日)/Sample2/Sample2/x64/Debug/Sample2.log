@@ -1,0 +1,3 @@
+﻿  Sample2.c
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\Sample2\Sample2\Sample2.c(6,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+  Sample2.vcxproj -> C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\Sample2\x64\Debug\Sample2.exe

@@ -1,0 +1,4 @@
+﻿  samplle.c
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample_20\samplle.c(1,1): error C2059: 構文エラー: '['
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample_20\samplle.c(1,8): error C3872: '0x3000': この文字を識別子で使用することはできません
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample_20\samplle.c(3,10): fatal  error C1083: include ファイルを開けません。'DxLib.h':No such file or directory

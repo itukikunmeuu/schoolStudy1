@@ -1,0 +1,2 @@
+﻿  sample3.cpp
+C:\Users\fko2347002\source\repos\プログラムコード4月\Sample(4月17日)\sample_22_2\sample3.cpp(67): error C4700: 初期化されていないローカル変数 'pNum2' が使用されます

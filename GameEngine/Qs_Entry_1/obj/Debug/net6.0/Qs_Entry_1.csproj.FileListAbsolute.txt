@@ -1,0 +1,16 @@
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\bin\Debug\net6.0\Qs_Entry_1.exe
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\bin\Debug\net6.0\Qs_Entry_1.deps.json
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\bin\Debug\net6.0\Qs_Entry_1.runtimeconfig.json
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\bin\Debug\net6.0\Qs_Entry_1.dll
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\bin\Debug\net6.0\Qs_Entry_1.pdb
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\Qs_Entry_1.csproj.AssemblyReference.cache
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\Qs_Entry_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\Qs_Entry_1.AssemblyInfoInputs.cache
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\Qs_Entry_1.AssemblyInfo.cs
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\Qs_Entry_1.csproj.CoreCompileInputs.cache
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\Qs_Entry_1.dll
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\refint\Qs_Entry_1.dll
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\Qs_Entry_1.pdb
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\Qs_Entry_1.genruntimeconfig.cache
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\obj\Debug\net6.0\ref\Qs_Entry_1.dll
+C:\Users\fko2347002\source\repos\GameEngine\Qs_Entry_1\bin\Debug\net6.0\Qs_Entry_1.dll.config
