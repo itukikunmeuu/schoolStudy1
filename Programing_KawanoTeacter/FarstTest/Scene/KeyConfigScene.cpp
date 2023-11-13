@@ -44,8 +44,9 @@ void KeyConfigScene::NormalUpdate(Input& input)
 		m_drawFunc = &KeyConfigScene::ExpandDraw;
 		m_frame = ;
 	}
-	else if
+	else if()
 	{
+		+
 
 	}
 }

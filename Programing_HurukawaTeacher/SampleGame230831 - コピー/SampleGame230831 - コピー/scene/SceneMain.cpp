@@ -26,11 +26,20 @@ namespace
 
 	// 一度に搭乗できる弾の最大数
 	constexpr int kShotMax = 256;
+
+	//画面がワイプするのにかかるフレーム数
+	constexpr int kWipeFrame = 30;
 }
 
 SceneMain::SceneMain() :
-	m_enemyInterval(0)
+	m_enemyInterval(0),
+	m_shakeFrame(0),
+	m_wipeFrame(0)
 {
+	//ゲーム画面描画先の生成
+	//画面サイズと同じ大きさのグラフィックデータを作成する
+	m_gameScreenHandle = MakeScreen(Game::kScreenWidth,Game::kScreenHeight,true);
+
 	// グラフィックのロード
 	m_playerHandle = LoadGraph("data/image/player.png");
 	assert(m_playerHandle != -1);
@@ -77,6 +86,9 @@ SceneMain::SceneMain() :
 
 SceneMain::~SceneMain()
 {
+	//MakeScreenで生成したグラフィックを削除する
+	DeleteGraph(m_gameScreenHandle);
+
 	// メモリからグラフィックの削除
 	DeleteGraph(m_playerHandle);
 	DeleteGraph(m_enemyHandle);
@@ -148,6 +160,8 @@ void SceneMain::Update()
 			//	// test
 			//	printfDx("当たっている\n");
 				m_pPlayer->OnDamage();
+				//プレイヤーがダメージを受けた瞬間、画面が揺れ始める
+				m_shakeFrame = 8;
 			}
 		}
 	}
@@ -164,6 +178,10 @@ void SceneMain::Update()
 			shot = nullptr;
 		}
 	}
+
+	//ワイプ処理
+	m_wipeFrame++;
+	if(m_wipeFrame > )
 
 	// 敵キャラクターを登場させる
 	// kEnemyIntevalフレーム経過するごとにランダムに敵を登場させる
@@ -188,10 +206,20 @@ void SceneMain::Update()
 			break;
 		}
 	}
+	//画面揺れのフレームのカウントダウン
+	m_shakeFrame--;
+	if (m_shakeFrame < 0) m_shakeFrame = 0;
 }
 
 void SceneMain::Draw() const
 {
+	//バックバッファに直接書き込むのではなく
+	//自分で生成したグラフィックデータに対して書き込みを行う
+	SetDrawScreen(m_gameScreenHandle);
+
+	//描画先スクリーンを倉する
+	ClearDrawScreen();
+
 	m_pBg->Draw();
 	m_pPlayer->Draw();
 	for (const auto& enemy : m_pEnemy)
@@ -208,6 +236,7 @@ void SceneMain::Draw() const
 		shot->Draw();
 	}
 
+
 	// デバック表示
 	DrawString(8, 8, "SceneMain", 0xffffff);
 
@@ -219,6 +248,27 @@ void SceneMain::Draw() const
 		if (shot) shotCount++;
 	DrawFormatString(8, 40, 0xffffff, 
 		"弾の数 %d", shotCount);
+	//バッファに書き込む設定に戻しておく
+	SetDrawScreen(DX_SCREEN_BACK);
+
+	//ゲーム画面をバックバッファに描画する
+	int screenX = 0;
+	int screenY = 0;
+	if (m_shakeFrame > 0)
+	{
+		//画面揺れ
+		screenX = GetRand(8) - 4;
+		screenY = GetRand(8) - 4;
+	}
+
+	//m_wipeFrameから描画する範囲を計算する
+	float wipeRate = static_cast<float>(m_wipeFrame) / static_cast<float>(kWipeFrame);
+	int wipeHeight = Game::kScreenHeight * wipeRate;
+	DrawRectGraph(screenX, screenY,
+		0, 0, Game::kScreenWidth, wipeHeight,
+		m_gameScreenHandle,true,false);
+
+//	DrawGraph(screenX, screenY, m_gameScreenHandle, true);
 }
 
 Vec2 SceneMain::GetNearEnemyPos(Vec2 pos) const

@@ -19,6 +19,7 @@ private:
 	std::array<char, 256> m_keyState;
 	std::array<char, 256> m_lastKeyState;
 
+
 	//コマンド名とキーコードをペアにしたテーブル
 	std::map<std::string, int>comandTable_;
 public:

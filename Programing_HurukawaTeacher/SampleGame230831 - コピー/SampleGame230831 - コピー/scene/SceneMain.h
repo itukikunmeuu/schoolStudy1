@@ -35,6 +35,8 @@ private:
 
 private:
 	// グラフィックのハンドル
+	int m_gameScreenHandle; //ゲーム画面
+
 	int m_playerHandle;
 	int m_enemyHandle;
 	int m_bgHandle;
@@ -49,7 +51,13 @@ private:
 	// ショット
 	vector<ShotBase*> m_pShot;
 
+	//画面ワイプ処理
+	int m_wipeFrame;
+
 	// 敵の登場間隔
 	int m_enemyInterval;
+
+	//ダメージを受けた時の画面揺れ演出
+	int m_shakeFrame;
 };
 
