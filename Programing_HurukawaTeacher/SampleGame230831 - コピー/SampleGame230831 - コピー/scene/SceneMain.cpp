@@ -262,13 +262,32 @@ void SceneMain::Draw() const
 	}
 
 	//m_wipeFrameから描画する範囲を計算する
+	//m_wipeFrameはゲーム開始時に0
+	//毎フレーム加算されてkWipeFrame(30)まで変化する
+	//wipeRateはm_wipeFrameの変化に合わせて0.0->1.0に変化する
+
 	float wipeRate = static_cast<float>(m_wipeFrame) / static_cast<float>(kWipeFrame);
 	int wipeHeight = Game::kScreenHeight * wipeRate;
-	DrawRectGraph(screenX, screenY,
-		0, 0, Game::kScreenWidth, wipeHeight,
-		m_gameScreenHandle,true,false);
+	//DrawRectGraph(screenX, screenY,
+	//	0, 0, Game::kScreenWidth, wipeHeight,
+	//	m_gameScreenHandle,true,false);
 
+	//offsetの値をwipeのしんこうにあわせて320->0に変化させたい
+	//0->320に変化させるのはわかりやすい　320*wipeRate
+
+	//sinf
+	int offset = 320 * (1.0f - wipeRate);
+
+
+	//画面の上から1ラインずつ描画を行っている
 //	DrawGraph(screenX, screenY, m_gameScreenHandle, true);
+	for (int y = 0; y < Game::kScreenHeight; y++)
+	{
+		int x  = y;
+		DrawRectGraph(0,y,
+			x,y,Game::kScreenWidth,1,
+			m_gameScreenHandle,true,false);
+	}
 }
 
 Vec2 SceneMain::GetNearEnemyPos(Vec2 pos) const
