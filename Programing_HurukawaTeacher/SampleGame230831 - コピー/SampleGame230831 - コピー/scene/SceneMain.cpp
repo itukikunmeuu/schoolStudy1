@@ -217,7 +217,7 @@ void SceneMain::Draw() const
 	//自分で生成したグラフィックデータに対して書き込みを行う
 	SetDrawScreen(m_gameScreenHandle);
 
-	//描画先スクリーンを倉する
+	//描画先スクリーンをクリアする
 	ClearDrawScreen();
 
 	m_pBg->Draw();

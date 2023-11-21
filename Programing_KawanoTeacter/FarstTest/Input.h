@@ -9,9 +9,6 @@ enum class InputType {
 };
 class Input
 {
-	friend KeyConfigScene;//キーコンフィグからは丸見え
-
-
 private:
 	//コマンド名と入力をペアにしたテーブル
 	//キーボードの時はkeybd&key_INPUT〇〇で

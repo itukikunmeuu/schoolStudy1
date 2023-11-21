@@ -4,6 +4,15 @@
 
 using namespace std;
 
+namespace {
+    struct  KeyCondHeader
+    {
+        char id[4] = "kyc";
+        float version = 1.0f;
+        size_t dataCount = 0;
+    };
+}
+
 Input::Input()
 {
 }

@@ -1,11 +1,1 @@
-﻿  Application.cpp
-C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-C:\Users\fko2347002\Documents\GitHub\schoolStudy1\MyPrograming\C++assignment\Application.cpp(14,15): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const wchar_t *' から 'const TCHAR *' へ変換できません。
-C:\Users\fko2347002\Documents\GitHub\schoolStudy1\MyPrograming\C++assignment\Application.cpp(14,25): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたはかっこで囲まれた関数スタイル キャストが必要です。
-C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2671,14): message : 'DxLib::LoadGraph' の宣言を確認してください
-C:\Users\fko2347002\Documents\GitHub\schoolStudy1\MyPrograming\C++assignment\Application.cpp(14,15): message : 引数リスト '(const wchar_t *)' を一致させようとしているとき
-C:\Users\fko2347002\Documents\GitHub\schoolStudy1\MyPrograming\C++assignment\Application.cpp(32,2): error C2665: 'DxLib::SetWindowTextA': オーバーロードされた関数ですべての引数の型を変換できませんでした
-C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxFunctionWin.h(75,14): message : 'int DxLib::SetWindowTextA(const TCHAR *)' の可能性があります
-C:\Users\fko2347002\Documents\GitHub\schoolStudy1\MyPrograming\C++assignment\Application.cpp(32,2): message : 'int DxLib::SetWindowTextA(const TCHAR *)': 引数 1 を 'const wchar_t [13]' から 'const TCHAR *' へ変換できません。
-C:\Users\fko2347002\Documents\GitHub\schoolStudy1\MyPrograming\C++assignment\Application.cpp(32,16): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたはかっこで囲まれた関数スタイル キャストが必要です。
-C:\Users\fko2347002\Documents\GitHub\schoolStudy1\MyPrograming\C++assignment\Application.cpp(32,2): message : 引数リスト '(const wchar_t [13])' を一致させようとしているとき
+﻿  C++assignment.vcxproj -> C:\Users\fko2347002\Documents\GitHub\schoolStudy1\MyPrograming\C++assignment\x64\Debug\C++assignment.exe

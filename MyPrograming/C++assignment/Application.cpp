@@ -9,12 +9,12 @@ namespace
 	constexpr int kScreenHeight = 480;
 }
 
-int MyLoadGraph(const wchar_t* path)
-{
-	int handle = LoadGraph(path);
-	assert(handle != -1);
-	return handle;
-}
+///int MyLoadGraph(const wchar_t* path)
+///{
+	///int handle = LoadGraph(path);
+	///assert(handle != -1);
+	///return handle;
+///}
 Application::Application()
 {
 	m_windowSize = Size{ kScreenHeight,kScreenWidth };
@@ -29,7 +29,7 @@ bool Application::Init()
 {
 	ChangeWindowMode(true);//ウィンドウズモードにします
 	SetGraphMode(m_windowSize.w, m_windowSize.h, 1);
-	SetWindowText(L"ごっついアクションゲーム");
+	//SetWindowText(L"ごっついアクションゲーム");
 	if (DxLib_Init() == -1)
 	{
 	return false;
@@ -43,7 +43,7 @@ void Application::Run()
 {
 }
 
-const Size& Application::GetWindowSize() const
-{
-	// TODO: return ステートメントをここに挿入します
-}
+///const Size& Application::GetWindowSize() const
+///{
+///	// TODO: return ステートメントをここに挿入します
+///}
