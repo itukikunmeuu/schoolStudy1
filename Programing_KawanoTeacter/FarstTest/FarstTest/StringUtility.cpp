@@ -20,7 +20,7 @@ std::wstring StringUtility::StringToWString(const std::string& str)
         str.data(), // 元の文字列の先頭ポインタ
         str.size(), // 元の文字列の文字列数
         nullptr,    // out, optionalなので、nullptrを渡しておく
-        0);         // ここでは意味ないので0にしておく
+        static_cast<int>(0));         // ここでは意味ないので0にしておく
 
     // 一度目の呼び出しの戻り値が、変換後文字列の文字数になっています。
     assert(result >= 0);
@@ -33,7 +33,7 @@ std::wstring StringUtility::StringToWString(const std::string& str)
         str.data(), // 元の文字列へのアドレス
         str.size(), // 元文字列の文字数
         ret.data(), // 変換後文字列のアドレス
-        ret.size());// 変換後の文字列数
+        static_cast<int>(ret.size()));// 変換後の文字列数
 
     return ret;
 }

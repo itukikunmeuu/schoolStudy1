@@ -1,4 +1,11 @@
 #pragma once
+
+struct Size
+{
+	int w;
+	int h;
+};
+
 /// <summary>
 /// アプリケーション全体を管理するクラス
 /// シングルトンクラス
@@ -6,12 +13,12 @@
 class Application
 {
 private:
-	Application() {};//シングルトンのためにコンストラクタをプライベートにする
+	Size m_windowSize;
+
+	Application();	// シングルトンのためにprivateに
 	// コピー＆代入の禁止
-	Application(const Application& app) = delete;//明示的にコピーコンストラクタをprivateに宣言
-	//private: クラス名(const　クラス名& ref)=delete;
-	                                             //これをすることでコピーコンストラクタが勝手に走るのを防ぐ
-	void operator =(const Application& app) = delete;//代入演算子もついでに廃止
+	Application(const Application& app) = delete;		// コピーコンストラクタの廃止
+	void operator =(const Application& app) = delete;	// 代入コンストラクタの廃止
 
 	/// <summary>
 	/// 後処理を行う
@@ -22,10 +29,16 @@ public:
 	/// Applicationのシングルトンインスタンスを返す
 	/// </summary>
 	/// <returns>Applicationインスタンスの参照を返す</returns>
-	static Application& GetInstance();
+	static Application& GetInstance()
+	{
+		static Application instance;	// 自分自身の静的オブジェクトを作ります。
+		return instance;
+	}
 
 	bool Init();
 	void Run();
+
+	const Size& GetWindowSize() const;
 
 };
 

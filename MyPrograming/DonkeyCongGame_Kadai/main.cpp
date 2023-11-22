@@ -30,10 +30,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		// 描画を行う前に画面をクリアする
 		ClearDrawScreen();
 
+
 		// ゲームの処理
 		pScene->Update();
 		pScene->Draw();
-
 
 		// 画面が切り替わるのを待つ
 		ScreenFlip();

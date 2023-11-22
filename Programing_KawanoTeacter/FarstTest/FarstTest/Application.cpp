@@ -1,10 +1,16 @@
 #include "Application.h"
-#include "SceneManager.h"
-#include "TitleScene.h"
+#include "Scene/SceneManager.h"
+#include "Scene/TitleScene.h"
 #include "Input.h"
 
 #include <DxLib.h>
 #include <cassert>
+
+namespace 
+{
+    constexpr int kScreenWidth = 640;
+    constexpr int kScreenHeight = 480;
+}
 
 int MyLoadGraph(const wchar_t* path)
 {
@@ -13,21 +19,20 @@ int MyLoadGraph(const wchar_t* path)
     return handle;
 }
 
+Application::Application()
+{
+    m_windowSize = Size{kScreenWidth, kScreenHeight};
+}
+
 void Application::Terminate()
 {
     DxLib_End();
 }
 
-Application& Application::GetInstance()
-{
-    static Application instance;//自分自身の静的オブジェクトを作る
-    return instance;
-
-}
-
 bool Application::Init()
 {
     ChangeWindowMode(true); // ウィンドウモードにします
+    SetGraphMode(m_windowSize.w, m_windowSize.h, 1);
     SetWindowText(L"ごっついアクションゲーム");
     if (DxLib_Init() == -1)
     {
@@ -41,7 +46,7 @@ bool Application::Init()
 void Application::Run()
 {
     SceneManager manager;
-    manager.ChangeScene(new TitleScene(manager));
+    manager.ChangeScene(std::make_shared<TitleScene>(manager));
     Input input;
     while (ProcessMessage() != -1)
     {
@@ -52,4 +57,9 @@ void Application::Run()
         ScreenFlip();
     }
     Terminate();
+}
+
+const Size& Application::GetWindowSize() const
+{
+    return m_windowSize;
 }

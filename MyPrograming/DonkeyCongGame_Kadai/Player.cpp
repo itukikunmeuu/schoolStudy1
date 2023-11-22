@@ -136,7 +136,7 @@ void Player::Draw() const
 		m_handle, true, false);
 #ifdef  _DEBUG
 	m_colRect.Draw(0x0000ff, false);
-#endif //  _DEBUG
+#endif //_DEBUG
 
 }
 
