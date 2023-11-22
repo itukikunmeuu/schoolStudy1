@@ -3,7 +3,9 @@
 
 // マネージャを呼べるように
 class FileManager;
-
+/// <summary>
+/// ファイルの規定っクラス
+/// </summary>
 class File
 {
 	friend FileManager;

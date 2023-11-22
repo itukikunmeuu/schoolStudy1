@@ -1,6 +1,7 @@
 #include "Application.h"
 #include "Scene/SceneManager.h"
 #include "Scene/TitleScene.h"
+#include "FileSystem/FileManager.h"
 #include "Input.h"
 
 #include <DxLib.h>
@@ -45,15 +46,16 @@ bool Application::Init()
 
 void Application::Run()
 {
-    SceneManager manager;
-    manager.ChangeScene(std::make_shared<TitleScene>(manager));
+    FileManager fimeManager;
+    SceneManager sceneManager;
+    sceneManager.ChangeScene(std::make_shared<TitleScene>(sceneManager));
     Input input;
     while (ProcessMessage() != -1)
     {
         ClearDrawScreen();
         input.Update(); // “ü—Í‚ğXV
-        manager.Update(input);
-        manager.Draw();
+        sceneManager.Update(input);
+        sceneManager.Draw();
         ScreenFlip();
     }
     Terminate();

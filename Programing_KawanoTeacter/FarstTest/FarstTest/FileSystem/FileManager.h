@@ -11,6 +11,7 @@ class File;
 /// </summary>
 class FileManager
 {
+
 public:
 	// ファイルパステーブル
 	std::unordered_map<std::wstring, std::shared_ptr<File>>

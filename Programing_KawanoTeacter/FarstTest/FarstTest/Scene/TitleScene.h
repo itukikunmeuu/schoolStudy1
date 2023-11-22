@@ -6,6 +6,9 @@
 /// </summary>
 class TitleScene : public Scene
 {
+private:
+	//std::shared_ptr<File>titleImag;
+
 public:
 	TitleScene(SceneManager& manager);
 	~TitleScene();

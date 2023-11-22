@@ -13,4 +13,5 @@ ImageFile::~ImageFile()
 
 void ImageFile::Delete()
 {
+	//DeleteGraph(this->)
 }
