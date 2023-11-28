@@ -31,6 +31,8 @@ SceneMain::SceneMain():
 	assert(m_playerHandle != -1);
 	m_enemyHandle = LoadGraph("data/Enemy_.png");
 	assert(m_enemyHandle != -1);
+	m_bgHandle = LoadGraph("data/Bg_.png");
+	assert(m_bgHandle != -1);
 
 	//プレイヤーメモリの確保
 	m_pPlayer = new Player{ this };
@@ -40,6 +42,7 @@ SceneMain::SceneMain():
 
 	//敵の準備
 	//m_pEnemy(vector何もしなければサイズは0)
+	
 
 	//resize関数でkEnemyMaxだけデータを保存できるようにする
 	
@@ -48,6 +51,9 @@ SceneMain::SceneMain():
 SceneMain::~SceneMain()
 {
 	//MakeScreenで生成したグラフィックを削除する
+	DeleteGraph(m_gameScreenHandle);
+
+	//メモリ削除
 	DeleteGraph(m_playerHandle);
 	DeleteGraph(m_enemyHandle);
 	DeleteGraph(m_bgHandle);
@@ -80,18 +86,17 @@ void SceneMain::Update()
 	Rect playerRect = m_pPlayer->GetColRect();
 
 
-	//画面揺れのフレームカウントダウン
-	m_wipeFrame--;
+	////画面揺れのフレームカウントダウン
+	//m_wipeFrame--;
 }
 
 void SceneMain::Draw() const
 {
-	//バックバッファに直接書き込むのではなく
-	//自分で生成したグラフィックデータに対して書き込む
-	SetDrawScreen(m_gameScreenHandle);
 
 	//描画先スクリーンをクリアする
-	ClearDrawScreen();
+	///ClearDrawScreen();
+
+	m_pPlayer->Draw();
 
 	//デバック表示
 	DrawString(8, 8, "SceneMain", 0xffffff);
@@ -99,29 +104,6 @@ void SceneMain::Draw() const
 	Vec2 PlayerPos = m_pPlayer->GetPos();
 	DrawFormatString(8, 24, 0xffffff,
 		"プレイヤーの座標(%.2f,%.2f)", PlayerPos.x, PlayerPos.y);
-
-	//ゲーム画面をバックバッファに描画する
-	int screenX = 0;
-	int screenY = 0;
-	if (m_shakeFrame > 0)
-	{
-		//画面揺れ
-		screenX = GetRand(8) - 4;
-		screenY = GetRand(8) - 4;
-	}
-
-	//毎フレーム加算されてkWipeFrame(30)まで変化する
-	float wipeRate = static_cast<float>(m_wipeFrame) / static_cast<float>(kWipeFrame);
-	int wopeHeight = Game::kScreenHeight * wipeRate;
-
-	//画面の上から1ラインずつ描画を行っている
-	for (int y = 0; y < Game::kScreenHeight; y++)
-	{
-		int x = y;
-		DrawRectGraph(0, y,
-			x, y, Game::kScreenWidth, 1,
-			m_gameScreenHandle, true, false);
-	}
 	
 }
 

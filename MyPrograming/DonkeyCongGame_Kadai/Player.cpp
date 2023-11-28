@@ -67,15 +67,15 @@ void Player::Update()
 	if (pad & PAD_INPUT_LEFT)
 	{
 		move.x--;
-		m_dir = kDirLeft;
+		///*m_dir = kDirLeft;*/
 		isMove = true;
 	}
 	if (pad & PAD_INPUT_RIGHT)
 	{
 		move.x++;
-		m_dir = kDirRight;
+		///*m_dir = kDirRight;*/
 		isMove = true;
-
+	}
 		//正規化
 		move.Normalize();
 		//長さの変更
@@ -98,18 +98,18 @@ void Player::Update()
 		m_colRect.SetCenter(m_pos.x, m_pos.y, kGraphWidth, kGraphHeight);
 
 		//攻撃,移動関係
-		if (isMove)
-		{
-			//歩きモーション
-			m_walkAnimeFrame++;
-			if (kAnimFrameCycle <= m_walkAnimeFrame)m_walkAnimeFrame = 0;
-		}
-		else
-		{
-			m_walkAnimeFrame = kAnimeFrameNum;
-		}
+		////if (isMove)
+		////{
+		////	//歩きモーション
+		////	m_walkAnimeFrame++;
+		////	if (kAnimFrameCycle <= m_walkAnimeFrame)m_walkAnimeFrame = 0;
+		////}
+		////else
+		////{
+		////	m_walkAnimeFrame = kAnimeFrameNum;
+		////}
 
-	}
+	
 
 }
 
