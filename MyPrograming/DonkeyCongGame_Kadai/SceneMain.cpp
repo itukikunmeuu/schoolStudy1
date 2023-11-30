@@ -48,9 +48,6 @@ SceneMain::SceneMain():
 SceneMain::~SceneMain()
 {
 	//MakeScreenで生成したグラフィックを削除する
-	DeleteGraph(m_gameScreenHandle);
-
-	//メモリからグラフィックの削除
 	DeleteGraph(m_playerHandle);
 	DeleteGraph(m_enemyHandle);
 	DeleteGraph(m_bgHandle);
@@ -96,8 +93,6 @@ void SceneMain::Draw() const
 	//描画先スクリーンをクリアする
 	ClearDrawScreen();
 
-	m_pPlayer->Draw();
-
 	//デバック表示
 	DrawString(8, 8, "SceneMain", 0xffffff);
 
@@ -105,10 +100,7 @@ void SceneMain::Draw() const
 	DrawFormatString(8, 24, 0xffffff,
 		"プレイヤーの座標(%.2f,%.2f)", PlayerPos.x, PlayerPos.y);
 
-	//
-	SetDrawScreen(DX_SCREEN_BACK);
-
-	//ゲーム画面をバックバッファに描画する 
+	//ゲーム画面をバックバッファに描画する
 	int screenX = 0;
 	int screenY = 0;
 	if (m_shakeFrame > 0)
@@ -121,9 +113,6 @@ void SceneMain::Draw() const
 	//毎フレーム加算されてkWipeFrame(30)まで変化する
 	float wipeRate = static_cast<float>(m_wipeFrame) / static_cast<float>(kWipeFrame);
 	int wopeHeight = Game::kScreenHeight * wipeRate;
-
-	//sinf
-	int offset = 320 * (1.0f - wipeRate);
 
 	//画面の上から1ラインずつ描画を行っている
 	for (int y = 0; y < Game::kScreenHeight; y++)

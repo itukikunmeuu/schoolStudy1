@@ -62,7 +62,7 @@ void Player::Update()
 	bool isMove = false; //移動中かどうか
 
 	//移動量を持つようにする
-	Vec2 move{ 0.0f,0.0f }; 
+	Vec2 move{ 0.0f,0.0f }; //引数ありコンストラクタは{} ()でもできるが{}のほうがいい
 
 	if (pad & PAD_INPUT_LEFT)
 	{

@@ -3,7 +3,7 @@
 #include "SceneManager.h"
 
 // プログラムは WinMain から始まります
-int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nCmdShow)
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	// 一部の関数はDxLib_Init()の前に実行する必要がある
 	ChangeWindowMode(true);
@@ -32,7 +32,6 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 		// ゲームの処理
 		pScene->Update();
-
 		pScene->Draw();
 
 
@@ -46,8 +45,10 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		}
 
 		// FPS60に固定する
-		// 16.66ミリ秒(16667マイクロ秒)経過するまで待つ
-		while (GetNowHiPerformanceCount() - start < 16667){}
+		while (GetNowHiPerformanceCount() - start < 16667)
+		{
+			// 16.66ミリ秒(16667マイクロ秒)経過するまで待つ
+		}
 	}
 	pScene->End();
 

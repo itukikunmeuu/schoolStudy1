@@ -22,6 +22,9 @@ public:
 
 	//特定の座標から一番近くにいる敵の座標を返す関数
 	Vec2 GetNearEemyPos(Vec2 pos) const;
+	//樽を追加する関数
+	//登録できなかった場合はfalseを返す
+	//登録できなかった場合は内部でpShot開放する
 
 private:
 	//敵キャラクターの生成
@@ -31,7 +34,7 @@ private:
 
 private:
 	//グラフィックのハンドル
-	int m_gameScreenHandle; //ゲーム画面
+	int m_gameScreenHandle;
 	
 	int m_playerHandle;
 	int m_enemyHandle;
