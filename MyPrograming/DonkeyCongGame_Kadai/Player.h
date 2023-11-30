@@ -54,5 +54,9 @@ private:
 	//当たった時にフレーム数を設定して
 	//以降毎フレーム減らしていく
 	int m_damageFrame;
+
+	int JumpPower;
+	bool JumpFlag = true;
+	int Jump;
 };
 

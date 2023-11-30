@@ -76,12 +76,69 @@ void Player::Update()
 		///*m_dir = kDirRight;*/
 		isMove = true;
 	}
+
+	
+	//if (pad & PAD_INPUT_1)
+	//{
+	//	//前フレームでボタンを押したかが押されている変数が0だったらジャンプ
+	//	if (JumpFlag == false)
+	//	{
+	//		//ジャンプの高さ
+	//		move.y -= 150;
+	//	}
+	//	//ジャンプしているので変数にfalseを代入
+	//	JumpFlag = true;
+	//}
+	//else
+	//{
+	//	//Aキーが押されていなかったら
+	//	//押されていないので0を代入する
+	//	JumpFlag = false;
+	//}
+	////もし地面についたら止まる
+	//if (move.y <= 360)
+	//{
+	//	JumpPower = 0;
+	//}
+	//else
+	//{
+	//move.y++;
+	//}
+
+	//落下処理
+	Jump -= JumpPower;
+	//落下加速度を加える
+	JumpPower -= 1.0f;
+	//Aボランを押したらジャンプ
+	if (pad & PAD_INPUT_1)
+	{
+		JumpPower = 7.0f;
+
+		//ボタンが機能しているか確認するためのボックス
+		DrawBox(0, 0, 32, 32, GetColor(255, 255, 0), true);
+
+		//プレイヤーのy軸が499以上の場合とまる
+		//プレイヤーのy軸が0以下の場合とまる
+		if (move.y > 360)
+		{
+			move.y = 360;
+		}
+		else if (move.y < 0)
+		{
+			move.y = 0;
+		}
+
+	}
+
+
+
 		//正規化
 		move.Normalize();
 		//長さの変更
 		move *= kSpeed;
 		//座標にベクトルを足す
 		m_pos += move;
+
 
 		// 縦軸の移動制限
 		if (m_pos.y < kGraphHalfHeight)
